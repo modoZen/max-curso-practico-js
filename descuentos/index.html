@@ -14,14 +14,14 @@
     
         <form>
           <label for="InputPrice">Escribe el precio de tu producto:</label>
-          <input id="InputPrice" type="number" />
+          <input id="InputPrice" type="number" onkeyup="onClickButtonPriceDiscount()"/>
     
           <label for="InputDiscount">Escribe el descuento de tu producto:</label>
-          <input id="InputDiscount" type="number" />
+          <input id="InputDiscount" type="number" onkeyup="onClickButtonPriceDiscount()" />
     
-          <button type="button" onclick="onClickButtonPriceDiscount()">
+          <!-- <button type="button" onclick="onClickButtonPriceDiscount()">
             Calcular el precio con descuento
-          </button>
+          </button> -->
     
           <p id="ResultP"></p>
         </form>
