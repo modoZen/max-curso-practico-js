@@ -16,13 +16,17 @@
           <label for="InputPrice">Escribe el precio de tu producto:</label>
           <input id="InputPrice" type="number" onkeyup="onClickButtonPriceDiscount()"/>
     
-          <label for="InputDiscount">Escribe el descuento de tu producto:</label>
-          <input id="InputDiscount" type="number" onkeyup="onClickButtonPriceDiscount()" />
+          <!-- <label for="InputDiscount">Escribe el descuento de tu producto:</label>
+          <input id="InputDiscount" type="number" onkeyup="onClickButtonPriceDiscount()" /> -->
+
+          <label for="InputCupon">Ingresa tu cupon y obten un descuento</label>
+          <input id="InputCupon" type="text" onkeyup="onClickButtonPriceDiscount()" />
     
           <!-- <button type="button" onclick="onClickButtonPriceDiscount()">
             Calcular el precio con descuento
           </button> -->
     
+          <p id="AvisoP"></p>
           <p id="ResultP"></p>
         </form>
       </section>
