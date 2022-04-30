@@ -64,4 +64,15 @@ function calcularAreaCuadrado() {
     const area = areaCuadrado(value);
     alert(area);
 }
-  
+
+var getAltura = (lado,base) => Math.sqrt(lado**2-(base/2)**2)
+
+function calcularAlturaIsosceles() {
+    const lado1 = document.getElementById('InputLado1').value
+    const lado2 = document.getElementById('InputLado2').value
+    const lado3 = document.getElementById('InputLado3').value
+    if(lado1 == lado2) alert(getAltura(lado1,lado3))
+    else if(lado1 == lado3) alert(getAltura(lado1,lado2))
+    else if(lado3 == lado2) alert(getAltura(lado2,lado1))
+    else alert('No es isosceles')
+}
